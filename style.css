@@ -1,0 +1,14 @@
+/*Universal*/
+
+:root {
+  --brand-base: #395144;
+  --brand-btn: #4e6c50;
+  --body-bg: #f0ebce;
+  --header-txt: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
