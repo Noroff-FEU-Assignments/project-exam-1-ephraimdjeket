@@ -152,6 +152,10 @@ header {
   cursor: pointer;
 }
 
+.blog-post-cards {
+  grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+}
+
 /* Universal about us */
 
 .about-us-box {
@@ -379,10 +383,6 @@ header {
     width: 100%;
   }
 
-  .blog-post-cards {
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  }
-
   .blog-post-content-text {
     display: flex;
     flex-direction: column;
@@ -597,10 +597,6 @@ header {
   .blog-postcard-img {
     object-fit: contain;
     width: 100%;
-  }
-
-  .blog-post-cards {
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   }
 
   .blog-post-content {
