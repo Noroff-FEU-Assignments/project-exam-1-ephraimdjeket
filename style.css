@@ -19,7 +19,8 @@ h1,
 h2,
 h3,
 p,
-a {
+a,
+.blog-specific-container {
   font-family: "Inter", sans-serif;
 }
 
@@ -89,6 +90,7 @@ header {
 }
 
 .text-section {
+  padding-top: 50px;
   position: absolute;
   text-align: center;
   left: 12.5%;
@@ -98,17 +100,16 @@ header {
 
 /* Universal main content*/
 
+.main-content {
+  padding: 50px 0;
+}
+
 .main-content,
 .carousel {
   gap: 10px;
   width: 70%;
   margin: auto;
   align-items: center;
-}
-
-.main-content-img {
-  max-width: 100%;
-  object-fit: contain;
 }
 
 .carousel {
@@ -135,28 +136,43 @@ header {
   justify-content: space-around;
   align-items: center;
   background-color: var(--post-bg);
-  height: 300px;
   width: 100%;
   padding: 20px 0;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
 }
 
 /* Universal blog post*/
 
 .blog-post-cards {
   display: grid;
-  gap: 20px;
+  gap: 80px;
 }
 
-.blog-post-content:hover {
-  cursor: pointer;
+.blog-post-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0 10px;
+  font-size: 1rem;
+  color: black;
+}
+
+.blog-post-content {
+  gap: 8px;
 }
 
 .blog-post-cards {
-  grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
 }
 
 /* Universal about us */
+
+.hero-top-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .about-us-box {
   background-color: var(--brand-base);
@@ -183,13 +199,34 @@ header {
   margin: auto;
 }
 
+.text-section-about {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  padding-top: 90px;
+}
+
 /* Universal contact us*/
+
+.hero-top,
+.hero-top-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.205);
+}
 
 .form-content {
   padding: 40px 0;
 }
 
 /* Hide stuff */
+
+.hidden-link {
+  display: none;
+}
 
 .hamburger {
   display: none;
@@ -248,11 +285,6 @@ header {
     height: 250px;
   }
 
-  .text-section {
-    top: 18%;
-    padding: 0 20px;
-  }
-
   .main-content {
     padding-top: 20px;
   }
@@ -260,10 +292,6 @@ header {
   .main-content {
     display: flex;
     flex-direction: column;
-  }
-
-  .main-content-img {
-    width: 100%;
   }
 
   .main-content-title,
@@ -275,10 +303,15 @@ header {
     padding: 20px 0;
   }
 
-  .row-desktop {
+  .main-row {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: top;
+  }
+
+  .main-content-img {
+    width: 70%;
+    margin: auto;
   }
 
   .carousel {
@@ -290,7 +323,7 @@ header {
   }
 
   .hero-post-cards {
-    font-size: 0.5rem;
+    font-size: 0.2rem;
   }
 
   .hero-postcard-img {
@@ -347,17 +380,17 @@ header {
   }
 
   .h3-footer {
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 500;
   }
 
   .p-footer {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 
   .fa-brands {
     padding-top: 10px;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   /* Blog post page */
@@ -365,17 +398,6 @@ header {
   .width90 {
     padding: 30px 0;
     width: 90%;
-  }
-
-  .blog-post-content {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 0 10px;
-    font-size: 1rem;
-    color: black;
-    gap: 10px;
   }
 
   .blog-postcard-img {
@@ -401,29 +423,34 @@ header {
   }
 
   .read-more-btn a {
-    font-size: 0.6rem;
+    font-size: 0.5rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
   }
 
-  .page-btns {
+  /* Blog specific page */
+
+  .blog-specific-container {
     display: flex;
-    flex-direction: row;
-    gap: 60px;
-  }
-  .next-page-btn {
-    display: flex;
-    flex-direction: row;
-    color: black;
-    cursor: pointer;
-    font-size: 0.9rem;
+    flex-direction: column;
+    text-align: center;
   }
 
-  .fa-caret-right,
-  .fa-caret-left {
-    color: #395144;
-    font-size: 1.4rem;
+  .blog-specific-img {
+    margin: auto;
+    width: 70%;
+    padding-bottom: 20px;
+  }
+
+  .blog-specific-title {
+    font-size: 1.5rem;
+  }
+
+  .blog-specific-text {
+    font-size: 1.3rem;
+    text-align: left;
+    padding: 20px 0;
   }
 
   /* About page */
@@ -465,7 +492,7 @@ header {
   .text-section-contact {
     position: absolute;
     text-align: center;
-    top: 23%;
+    top: 30%;
     left: 12.5%;
     right: 12.5%;
     padding: 0 20px;
@@ -508,42 +535,44 @@ header {
   /* Home page desktop*/
 
   .logo img {
-    height: 40px;
+    height: 35px;
   }
 
   .nav-bar {
     padding: 0 50px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 400;
   }
 
   .nav-bar li a:hover {
     padding: 5px 0;
-    border-bottom: 2px solid var(--body-bg);
-    border-radius: 5px;
-  }
-
-  .text-section p {
-    font-size: 1.3rem;
-    padding: 0 200px;
+    border-bottom: 1px solid var(--body-bg);
+    transition: 0s;
   }
 
   /* Main content desktop*/
 
+  .text-section h1,
+  .main-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .text-section p {
+    font-size: 1.2rem;
+    padding: 0 200px;
+  }
   .main-content {
-    padding-top: 150px;
+    padding-top: 50px;
   }
 
   .main-content p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 1.2;
   }
 
   .main-content h2 {
     display: flex;
-    justify-content: space-around;
-    margin: auto;
-    font-size: 1.7rem;
+    justify-content: flex-start;
     padding-bottom: 20px;
   }
 
@@ -551,21 +580,31 @@ header {
     height: 500px;
   }
 
-  .main-content-img,
   .bg-img {
     width: 50%;
   }
 
-  .row-desktop {
-    display: grid;
-    grid-template-rows: (2fr);
-    text-align: left;
-    gap: 20px;
-    padding-bottom: 150px;
+  .hero-postcard-img {
+    width: 100%;
+    object-fit: contain;
   }
 
-  .row-desktop p {
-    float: left;
+  .main-content-img {
+    height: 300px;
+    object-fit: scale-down;
+    margin: auto;
+  }
+
+  .main-row {
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    gap: 30px;
+  }
+
+  .main-row p {
+    font-size: 1.4rem;
+    text-align: left;
   }
 
   .carousel {
@@ -574,7 +613,7 @@ header {
 
   .carousel-title {
     padding-top: 40px;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
   }
 
   .hero-post-content-title,
@@ -588,6 +627,11 @@ header {
 
   /* Blog post desktop */
 
+  .blog-specific-container {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
   .width90 {
     gap: 40px;
     padding: 30px 0;
@@ -599,17 +643,6 @@ header {
     width: 100%;
   }
 
-  .blog-post-content {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 0 10px;
-    font-size: 1rem;
-    color: black;
-    gap: 5px;
-  }
-
   .read-more-btn {
     background-color: var(--btnclr);
     height: 30px;
@@ -618,17 +651,21 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    font-size: 0.8rem;
+  }
+
+  .read-more-btn:hover {
+    transition: 0.3s;
+    background-color: #5f8370;
   }
 
   /* About page desktop */
 
-  .text-section h1 {
-    font-size: 1.3rem;
-  }
-
   .text-section {
-    top: 20%;
-    padding: auto 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 100px 20px;
+    background-color: rgba(0, 0, 0, 0);
   }
 
   .bg-img {
@@ -653,13 +690,17 @@ header {
   }
 
   .about-title {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     padding-bottom: 10px;
   }
 
   .about-us-box h2 {
     text-align: center;
     padding-bottom: 25px;
+  }
+
+  .about-title p {
+    font-size: 1.2rem;
   }
 
   .about-us-box h3 {
@@ -774,18 +815,15 @@ header {
   }
 
   .h3-footer {
-    font-size: 1.5rem;
     font-weight: 500;
   }
 
   .p-footer {
-    font-size: 1.3rem;
     line-height: 1.5;
   }
 
   .fa-brands {
     padding-top: 10px;
     padding-right: 15px;
-    font-size: 1.4rem;
   }
 }

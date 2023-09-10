@@ -1,30 +1,24 @@
 const mainURL = 'https://dertzeydev.com/wp-json/wp/v2/posts';
-const imgURL = 'https://dertzeydev.com/wp-json/wp/v2/media';
+const fetchURL = 'https://dertzeydev.com/wp-json/wp/v2/posts?per_page=12&_embed';
 
-Promise.all([fetch(mainURL), fetch(imgURL)])
-    .then(([postsResponse, imagesResponse]) => {
-        return Promise.all([postsResponse.json(), imagesResponse.json()]);
-    })
-    .then(([postsData, imagesData]) => {
+fetch(fetchURL)
+    .then(response => response.json())
+    .then(postsData => {
         const CONTAINER = document.querySelector(".blog-post-cards");
         let blogPostCardsHTML = '';
 
         postsData.forEach(post => {
-            const featuredMediaId = post.featured_media;
-
-            const imageData = imagesData.find(image => image.id === featuredMediaId);
-
-            const imageUrl = imageData ? imageData.source_url : '';
+            const featuredMedia = post._embedded['wp:featuredmedia'][0];
+            const altText = featuredMedia.alt_text || ''; // Get alt text, or an empty string if it's not available.
+            const imageUrl = featuredMedia.source_url;
 
             blogPostCardsHTML += `
                 <div class="blog-post-content">
-                    <img class="blog-postcard-img" src="${imageUrl}" alt="DeFi logo on a laptop">
-        
-                    <h3>${post.title.rendered} </h3>
-                    <p>${post.date}</p> 
-                    <!-- Use post.title.rendered to access the title -->
-                    <p class="blog-post-content-text">${post.excerpt.rendered}</p> <!-- Use post.excerpt.rendered to access the excerpt -->
-                    <a href="#" class="read-more-btn">Read more</a>
+                    <img class="blog-postcard-img" src="${imageUrl}" alt="${altText}">
+                    <h3>${post.title.rendered}</h3>
+                    <p>${post.date}</p>
+                    <p class="blog-post-content-text">${post.excerpt.rendered}</p>
+                    <a href="blogspecific.html?id=${post.id}" class="read-more-btn">Read more</a>
                 </div>
             `;
         });
@@ -34,4 +28,9 @@ Promise.all([fetch(mainURL), fetch(imgURL)])
     .catch(error => {
         console.log('An error occurred:', error);
     });
+
+
+
+
+
 
