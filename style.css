@@ -206,6 +206,7 @@ header {
   align-items: center;
   color: white;
   padding-top: 90px;
+  background-color: rgba(0, 0, 0, 0.185);
 }
 
 /* Universal contact us*/
