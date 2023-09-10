@@ -135,10 +135,21 @@ header {
   justify-content: space-around;
   align-items: center;
   background-color: var(--post-bg);
-  height: 30px;
+  height: 300px;
   width: 100%;
   padding: 20px 0;
   font-size: 0.7rem;
+}
+
+/* Universal blog post*/
+
+.blog-post-cards {
+  display: grid;
+  gap: 20px;
+}
+
+.blog-post-content:hover {
+  cursor: pointer;
 }
 
 /* Universal about us */
@@ -317,8 +328,9 @@ header {
 
   .footer-content-text {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 30px;
   }
 
   .footer-content-text1 {
@@ -326,7 +338,7 @@ header {
   }
 
   .footer-content-text2 {
-    text-align: right;
+    text-align: left;
     line-height: 1.5;
   }
 
@@ -347,49 +359,49 @@ header {
   /* Blog post page */
 
   .width90 {
-    gap: 40px;
     padding: 30px 0;
     width: 90%;
   }
 
-  .blog-post-title {
+  .blog-post-content {
     display: flex;
+    align-items: center;
+    flex-direction: column;
     justify-content: space-around;
-    color: black;
-    padding-top: 20px;
+    padding: 0 10px;
     font-size: 1rem;
+    color: black;
+    gap: 10px;
   }
 
   .blog-postcard-img {
     object-fit: cover;
-    width: 50%;
+    width: 100%;
   }
 
   .blog-post-cards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   }
 
   .blog-post-content-text {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    border: 1px solid black;
-    background-color: var(--post-bg);
-    width: 50%;
     flex-direction: column;
-    padding: 0 10px;
-    height: 100px;
+    width: 50%;
     font-size: 0.8rem;
   }
 
   .read-more-btn {
     background-color: var(--btnclr);
-    height: 20px;
-    width: 80px;
+    height: 30px;
+    width: 90px;
     border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .read-more-btn a {
+    font-size: 0.6rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -545,8 +557,8 @@ header {
   }
 
   .row-desktop {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-rows: (2fr);
     text-align: left;
     gap: 20px;
     padding-bottom: 150px;
@@ -582,44 +594,30 @@ header {
     width: 90%;
   }
 
-  .blog-post-title {
-    display: flex;
-    justify-content: space-around;
-    color: black;
-    padding-top: 20px;
-    font-size: 1rem;
-  }
-
   .blog-postcard-img {
     object-fit: contain;
-    width: 50%;
+    width: 100%;
   }
 
   .blog-post-cards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding-bottom: 60px;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   }
 
-  .blog-post-content-text {
+  .blog-post-content {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    border: 1px solid black;
-    background-color: var(--post-bg);
-    width: 50%;
     flex-direction: column;
+    justify-content: space-around;
     padding: 0 10px;
-    height: 100px;
-    font-size: 0.8rem;
+    font-size: 1rem;
+    color: black;
+    gap: 5px;
   }
 
   .read-more-btn {
     background-color: var(--btnclr);
-    height: 20px;
-    width: 80px;
+    height: 30px;
+    width: 90px;
     border-radius: 20px;
     display: flex;
     justify-content: space-around;
