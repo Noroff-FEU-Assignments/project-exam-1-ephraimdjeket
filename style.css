@@ -138,16 +138,13 @@ header {
 }
 
 .wrapper i {
-  height: 50px;
-  width: 50px;
-  background: var(--brand-base);
   text-align: center;
   line-height: 50px;
   border-radius: 50%;
   cursor: pointer;
   position: absolute;
   top: 50%;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .wrapper i:first-child {
@@ -184,6 +181,14 @@ header {
 .carousel.dragging .card {
   cursor: grab;
   user-select: none;
+}
+
+.wrapper i#left {
+  left: 0; /* Position the left arrow at the left edge */
+}
+
+.wrapper i#right {
+  right: 0; /* Position the right arrow at the right edge */
 }
 
 /* Universal blog post*/
@@ -866,6 +871,6 @@ header {
 
 @media screen and (max-width: 600px) {
   .wrapper .carousel {
-    grid-auto-columns: 50%;
+    grid-auto-columns: calc((100% / 1.8) - 12px);
   }
 }
