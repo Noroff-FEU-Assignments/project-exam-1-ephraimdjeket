@@ -131,10 +131,17 @@ header {
   padding: 20px 0;
 }
 
+.arrows {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .wrapper {
   max-width: 800px;
   width: 100%;
   position: relative;
+  overflow: hidden;
 }
 
 .wrapper i {
@@ -142,9 +149,10 @@ header {
   line-height: 50px;
   border-radius: 50%;
   cursor: pointer;
-  position: absolute;
-  top: 50%;
   font-size: 1.5rem;
+  background-color: var(--brand-base);
+  width: 50px;
+  height: 50px;
 }
 
 .wrapper i:first-child {
@@ -181,14 +189,6 @@ header {
 .carousel.dragging .card {
   cursor: grab;
   user-select: none;
-}
-
-.wrapper i#left {
-  left: 0; /* Position the left arrow at the left edge */
-}
-
-.wrapper i#right {
-  right: 0; /* Position the right arrow at the right edge */
 }
 
 /* Universal blog post*/
@@ -271,6 +271,22 @@ header {
 
 .form-content {
   padding: 40px 0;
+}
+
+.submit {
+  background-color: #4e6c50;
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  font-size: 1.2rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.message-box,
+.submit {
+  margin-bottom: 30px;
 }
 
 /* Hide stuff */
@@ -541,7 +557,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 400px;
+    height: 450px;
     width: 330px;
     background-color: var(--brand-base);
     border-radius: 20px;
@@ -559,11 +575,13 @@ header {
   }
 
   .form-group input {
-    font-size: 1.4rem;
+    height: 30px;
   }
 
-  .form-group textarea {
-    font-size: 2.5rem;
+  .form-group textarea,
+  .form-group input {
+    font-size: 1.1rem;
+    padding-left: 10px;
   }
 }
 
@@ -766,8 +784,8 @@ header {
   .form-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    height: 450px;
+    justify-content: center;
+    height: 550px;
     width: 380px;
     background-color: var(--brand-base);
     border-radius: 20px;
@@ -785,11 +803,13 @@ header {
   }
 
   .form-group input {
-    font-size: 1.6rem;
+    height: 40px;
   }
 
-  .form-group textarea {
-    font-size: 2.5rem;
+  .form-group textarea,
+  .form-group input {
+    font-size: 1.3rem;
+    padding-left: 10px;
   }
 
   /*Footer content desktop*/
