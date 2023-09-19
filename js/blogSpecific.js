@@ -17,15 +17,14 @@ fetch(URLID)
         featuredImageURL = featuredImage ? featuredImage[0].source_url : '';
 
         PRODUCTCONTAINER.innerHTML = `
-            <img class="blog-specific-img" src="${featuredImageURL}" alt="">
+            <img class="blog-specific" src="${featuredImageURL}" alt="">
             <h1 class="blog-specific-title">${post.title.rendered}</h1>
-            <p>${post.date}</p>
-            <p class="blog-specific-text">${post.content.rendered}</p>
+            <p class="blog-date">${post.date}</p>
+            <p class="blog-specific">${post.content.rendered}</p>
         </section>`;
         document.title = `${post.title.rendered}`;
     })
     .catch(error => {
         console.log('An error occurred:', error);
     });
-
 

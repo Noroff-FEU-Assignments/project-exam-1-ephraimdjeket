@@ -1,0 +1,57 @@
+.blog-specific-container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 35%;
+}
+
+h1,
+.blog-date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-date {
+  padding-bottom: 20px;
+}
+
+h2 {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  text-align: left;
+  padding-bottom: 5px;
+}
+
+.blog-specific-title {
+  font-size: 1.8rem;
+}
+
+.date-specific {
+  padding-bottom: 40px;
+}
+
+.blog-post-content-text {
+  text-align: left;
+}
+
+.blog-specific {
+  font-size: 3rem;
+}
+
+.blog-specific-container p {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-bottom: 20px;
+  line-height: 1.5;
+}
+
+.wp-block-image {
+  margin: auto;
+  padding-bottom: 20px;
+  object-fit: contain;
+  max-width: 100%;
+  overflow: hidden;
+}

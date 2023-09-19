@@ -132,9 +132,8 @@ header {
 }
 
 .arrows {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .wrapper {
@@ -491,16 +490,6 @@ header {
     text-align: center;
   }
 
-  .blog-specific-img {
-    margin: auto;
-    width: 70%;
-    padding-bottom: 20px;
-  }
-
-  .blog-specific-title {
-    font-size: 1.5rem;
-  }
-
   .blog-specific-text {
     font-size: 1.3rem;
     text-align: left;
@@ -645,6 +634,7 @@ header {
     object-fit: scale-down;
     margin: auto;
     float: right;
+    margin-left: 50px;
   }
 
   .main-row {
