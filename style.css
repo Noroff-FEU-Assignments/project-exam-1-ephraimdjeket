@@ -558,7 +558,7 @@ header {
     flex-direction: column;
     justify-content: space-around;
     height: 450px;
-    width: 330px;
+    width: 300px;
     background-color: var(--brand-base);
     border-radius: 20px;
     margin: auto;
@@ -786,7 +786,7 @@ header {
     flex-direction: column;
     justify-content: center;
     height: 550px;
-    width: 380px;
+    width: 350px;
     background-color: var(--brand-base);
     border-radius: 20px;
     margin: auto;
