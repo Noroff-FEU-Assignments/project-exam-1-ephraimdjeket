@@ -391,10 +391,37 @@ header {
     flex-direction: column;
   }
 
+  /* Carousel styling Mobile*/
+
   .main-content-title,
   .carousel-title,
   .blog-post-h1 {
     font-size: 1.1rem;
+  }
+
+  .wrapper h3 {
+    font-size: 0.4rem;
+  }
+
+  .card .img img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+
+  .carousel .card {
+    list-style: none;
+    background: var(--post-bg);
+    color: black;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    height: 190px;
+    font-size: 0.7rem;
   }
 
   .carousel-title {
