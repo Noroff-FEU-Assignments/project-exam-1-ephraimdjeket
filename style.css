@@ -440,8 +440,16 @@ header {
 
   .main-row {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
+    text-align: center;
+    gap: 10px;
     align-items: top;
+  }
+
+  .main-content-title {
+    padding-bottom: 20px;
   }
 
   .main-content-img {
