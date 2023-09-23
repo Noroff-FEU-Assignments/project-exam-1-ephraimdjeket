@@ -33,6 +33,11 @@ a {
   text-decoration: none;
 }
 
+.error-message {
+  color: red;
+  font-size: 0.7rem;
+}
+
 header {
   position: sticky;
   z-index: 999;
@@ -124,11 +129,14 @@ header {
 
 /* Universal carousel */
 
+.wrapper h3 {
+  font-size: 0.7rem;
+}
+
 .card .img img {
   width: 140px;
   height: 140px;
-  object-fit: contain;
-  padding: 20px 0;
+  object-fit: cover;
 }
 
 .arrows {
@@ -296,7 +304,7 @@ header {
   padding: 40px 0;
 }
 
-.submit {
+.submit-btn {
   background-color: #4e6c50;
   border: none;
   color: white;
@@ -305,10 +313,10 @@ header {
   font-family: "Inter", sans-serif;
   font-weight: 500;
   cursor: pointer;
+  margin-top: 20px;
 }
 
-.message-box,
-.submit {
+.message-box {
   margin-bottom: 30px;
 }
 
