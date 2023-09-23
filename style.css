@@ -127,7 +127,7 @@ header {
 .card .img img {
   width: 140px;
   height: 140px;
-  object-fit: cover;
+  object-fit: contain;
   padding: 20px 0;
 }
 
@@ -191,6 +191,10 @@ header {
 }
 
 /* Universal blog post*/
+
+.blog-post-h1 {
+  padding-bottom: 30px;
+}
 
 .blog-post-cards {
   display: grid;
@@ -275,7 +279,7 @@ header {
   align-items: center;
   color: white;
   padding-top: 90px;
-  background-color: rgba(0, 0, 0, 0.185);
+  background-color: rgba(0, 0, 0, 8%);
 }
 
 /* Universal contact us*/
@@ -380,7 +384,8 @@ header {
   }
 
   .main-content-title,
-  .carousel-title {
+  .carousel-title,
+  .blog-post-h1 {
     font-size: 1.1rem;
   }
 
@@ -473,7 +478,7 @@ header {
   }
 
   .blog-postcard-img {
-    object-fit: cover;
+    object-fit: contain;
     width: 100%;
   }
 
