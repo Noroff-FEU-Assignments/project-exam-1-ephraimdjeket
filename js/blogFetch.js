@@ -22,8 +22,6 @@ fetch(fetchURL)
                 </div>
             `;
         });
-
-        CONTAINER.innerHTML = blogPostCardsHTML;
     })
     .catch(error => {
         console.log('An error occurred:', error);

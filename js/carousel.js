@@ -1,5 +1,5 @@
 const carousel = document.querySelector(".carousel");
-const arrowBtns = document.querySelectorAll(".wrapper i"); // Use querySelectorAll to select all matching elements
+const arrowBtns = document.querySelectorAll(".wrapper i");
 const firstCardWidth = carousel.querySelector(".card").offsetWidth;
 
 let isDragging = false;

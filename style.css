@@ -215,6 +215,26 @@ header {
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
 }
 
+/* Load more btn*/
+
+.load-more-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 40px;
+  background-color: var(--brand-btn);
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 50px;
+}
+
+.load-more-btn:hover {
+  transition: 0.3s;
+  background-color: #5f8370;
+}
+
 /* Universal about us */
 
 .hero-top-about {
@@ -319,7 +339,6 @@ header {
     flex-direction: column;
     top: 100px;
     right: -100%;
-    gap: 0;
     background-color: var(--brand-base);
     text-align: center;
     padding: 20px 20px;
@@ -676,7 +695,6 @@ header {
   }
 
   .width90 {
-    gap: 40px;
     padding: 30px 0;
     width: 90%;
   }
@@ -684,6 +702,12 @@ header {
   .blog-postcard-img {
     object-fit: contain;
     width: 100%;
+  }
+
+  .read-more-btn,
+  .load-more-btn {
+    font-size: 1rem;
+    font-family: "Inter", sans-serif;
   }
 
   .read-more-btn {
