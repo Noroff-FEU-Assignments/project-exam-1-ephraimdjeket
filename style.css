@@ -326,6 +326,16 @@ header {
   margin-bottom: 30px;
 }
 
+/* Footer */
+
+.footer-content-text2 p {
+  border-bottom: 1px solid;
+}
+
+.footer-content-text2 p:hover {
+  color: var(--body-bg);
+}
+
 /* Hide stuff */
 
 .hidden-link {
@@ -339,6 +349,15 @@ header {
 
 .hide-btn {
   display: none;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* Mobile GLOBAL */
@@ -543,15 +562,7 @@ header {
     margin: 50px;
   }
 
-  .wp-block-image {
-    display: block;
-    max-width: 30vw;
-    height: auto;
-    cursor: pointer;
-  }
-
-  .blog-postcard-img,
-  .wp-block-image {
+  .blog-postcard-img {
     object-fit: contain;
     width: 100%;
   }
@@ -696,22 +707,25 @@ header {
 
   /* Main content desktop*/
 
-  .text-section h1,
+  .text-section h1 {
+    font-size: 2rem;
+    padding-bottom: 10px;
+  }
+
   .main-content h2 {
     font-size: 1.5rem;
   }
 
   .text-section p {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .text-section p {
     padding: 0 180px;
   }
   .main-content {
     padding-top: 50px;
-  }
-
-  .main-content p {
-    font-size: 1.2rem;
-    line-height: 1.2;
   }
 
   .main-content h2 {
@@ -744,7 +758,7 @@ header {
   }
 
   .main-row p {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     text-align: left;
   }
 
@@ -952,10 +966,6 @@ header {
   .footer-content-text2 p {
     line-height: 2;
     cursor: pointer;
-  }
-
-  .footer-content-text2 p:hover {
-    color: var(--body-bg);
   }
 
   .footer-content-text3 {

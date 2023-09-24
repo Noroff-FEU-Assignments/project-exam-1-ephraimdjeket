@@ -9,7 +9,7 @@ fetch(fetchURL)
 
         postsData.forEach(post => {
             const featuredMedia = post._embedded['wp:featuredmedia'][0];
-            const altText = featuredMedia.alt_text || ''; // Get alt text, or an empty string if it's not available.
+            const altText = featuredMedia.alt_text || '';
             const imageUrl = featuredMedia.source_url;
 
             blogPostCardsHTML += `
