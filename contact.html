@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blockchainbites | Contact</title>
+    <meta name="description"
+        content="Contact Blockchainbites for queries, feedback, and more. Get in touch with our team and share your thoughts on the world of blockchain.">
     <link href="style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,10 +39,10 @@
                 <a href="index.html"><img src="images/logo-blockchainbites.png" alt="Blockchainbites logo"></a>
             </div>
             <ul class="nav-menu">
-                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="blog-posts.html" class="nav-link">Explore posts</a></li>
-                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="contact.html" class="nav-link">Contact us</a></li>
+                <li class="nav-item current-home"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item current-posts"><a href="blog-posts.html" class="nav-link">Explore posts</a></li>
+                <li class="nav-item current-about"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item current-contact"><a href="contact.html" class="nav-link">Contact us</a></li>
             </ul>
             <div class="hamburger">
                 <span class="bar"></span>
@@ -66,19 +68,19 @@
                     <h2>Contact us</h2>
                     <div class="form-group">
                         <label for="name">Name:</label>
-                        <input type="text" id="name">
+                        <input type="text" id="name" required>
                         <div class="error-message" id="name-error"></div>
                     </div>
 
                     <div class="form-group">
                         <label for="email">Email:</label>
-                        <input type="email" id="email">
+                        <input type="email" id="email" required>
                         <div class="error-message" id="email-error"></div>
                     </div>
 
                     <div class="form-group">
                         <label for="subject">Subject:</label>
-                        <input type="text" id="subject">
+                        <input type="text" id="subject" required>
                         <div class="error-message" id="subject-error"></div>
                     </div>
 
