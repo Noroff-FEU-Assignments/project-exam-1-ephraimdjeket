@@ -1,7 +1,7 @@
 const mainURL = 'https://dertzeydev.com/wp-json/wp/v2/posts';
 const CONTAINER = document.querySelector(".blog-post-cards");
 let currentPage = 1;
-const PER_PAGE = 4;
+const PER_PAGE = 10;
 
 function fetchPosts(page) {
     const fetchURL = `${mainURL}?page=${page}&per_page=${PER_PAGE}&_embed`;

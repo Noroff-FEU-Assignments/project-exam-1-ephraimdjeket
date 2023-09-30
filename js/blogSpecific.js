@@ -1,3 +1,5 @@
+import { mainURL } from '/js/blogFetch.js';
+
 const QUERYSTRING = document.location.search;
 const PARAMS = new URLSearchParams(QUERYSTRING);
 const ID = PARAMS.get("id");
@@ -12,9 +14,9 @@ fetch(URLID)
         const featuredImage = post._embedded && post._embedded['wp:featuredmedia'];
         featuredImageURL = featuredImage ? featuredImage[0].source_url : '';
         PRODUCTCONTAINER.innerHTML = `
-            <img class="blog-specific" src="${featuredImageURL}" alt="">
+            <img class="blogSpecific" src="${featuredImageURL}" alt="">
             <h1 class="blog-specific-title">${post.title.rendered}</h1>
-            <p class="blog-date">${post.date}</p>
+            <p class="blog-date">${post.date}</p>s
             <p class="blog-specific">${post.content.rendered}</p>
         </section>`;
         document.title = `${post.title.rendered}`;

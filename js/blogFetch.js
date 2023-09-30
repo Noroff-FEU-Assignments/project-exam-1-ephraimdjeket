@@ -1,4 +1,4 @@
-const mainURL = 'https://dertzeydev.com/wp-json/wp/v2/posts';
+export const mainURL = 'https://dertzeydev.com/wp-json/wp/v2/posts';
 const fetchURL = 'https://dertzeydev.com/wp-json/wp/v2/posts?per_page=12&_embed';
 
 fetch(fetchURL)
@@ -26,6 +26,7 @@ fetch(fetchURL)
     .catch(error => {
         console.log('An error occurred:', error);
     });
+
 
 
 

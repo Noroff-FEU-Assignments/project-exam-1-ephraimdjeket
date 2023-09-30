@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: left;
-  width: 35%;
+  width: 60%;
 }
 
 h1,
@@ -13,7 +13,7 @@ h1,
 }
 
 .blog-date {
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 h2 {
@@ -21,7 +21,6 @@ h2 {
   justify-content: left;
   align-items: left;
   text-align: left;
-  padding-bottom: 5px;
 }
 
 .blog-specific-title {
@@ -29,7 +28,7 @@ h2 {
 }
 
 .date-specific {
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 
 .blog-post-content-text {
@@ -44,14 +43,11 @@ h2 {
   display: flex;
   flex-direction: column;
   text-align: left;
-  padding-bottom: 20px;
   line-height: 1.5;
+  padding: 10px 0;
 }
 
-.wp-block-image {
-  margin: auto;
-  padding-bottom: 20px;
-  object-fit: contain;
-  max-width: 100%;
-  overflow: hidden;
+.wp-block-post-featured-image {
+  max-height: 600px;
+  margin-bottom: 20px;
 }
