@@ -6,6 +6,9 @@ const PER_PAGE = 10;
 async function fetchPosts(page) {
     const fetchURL = `${mainURL}?page=${page}&per_page=${PER_PAGE}&_embed`;
 
+
+    document.querySelector('.loader').style.display = 'block';
+
     try {
         const response = await fetch(fetchURL);
         if (!response.ok) {
@@ -31,11 +34,18 @@ async function fetchPosts(page) {
         });
 
         CONTAINER.innerHTML += blogPostCardsHTML;
+
+
+        document.querySelector('.loader').style.display = 'none';
+
     } catch (error) {
         console.error('An error occurred:', error);
         document.getElementById('error-message-display').textContent = error.message;
         document.getElementById('error-message-display').style.display = 'block';
         document.querySelector('.load-more-btn').disabled = true;
+
+        // Hide the loader if there was an error
+        document.querySelector('.loader').style.display = 'none';
     }
 }
 
@@ -45,4 +55,3 @@ document.querySelector('.load-more-btn').addEventListener('click', () => {
     currentPage++;
     fetchPosts(currentPage);
 });
-
