@@ -1,5 +1,6 @@
-Desktop prototype: https://www.figma.com/proto/35vzRlGLrzHEpjssAAR284/Project-exam-1---Blockchainbites?page-id=0%3A1&type=design&node-id=1-4&viewport=320%2C506%2C0.12&t=xwDsjYd1khDkiwEf-1&scaling=min-zoom&starting-point-node-id=1%3A4&mode=design
+![image](https://github.com/Noroff-FEU-Assignments/project-exam-1-Dertzey/assets/45997915/4b1b9044-fbd8-4804-8ac3-6209aad19c2d)
 
+Desktop prototype: https://www.figma.com/proto/35vzRlGLrzHEpjssAAR284/Project-exam-1---Blockchainbites?page-id=0%3A1&type=design&node-id=1-4&viewport=320%2C506%2C0.12&t=xwDsjYd1khDkiwEf-1&scaling=min-zoom&starting-point-node-id=1%3A4&mode=design
 Mobile prototype: https://www.figma.com/proto/35vzRlGLrzHEpjssAAR284/Project-exam-1---Blockchainbites?page-id=106%3A2558&type=design&node-id=114-2563&viewport=343%2C375%2C0.61&t=7irhaNcgV1zR2U3e-1&scaling=scale-down&starting-point-node-id=114%3A2563&mode=design
 
 ## Project Exam 1
