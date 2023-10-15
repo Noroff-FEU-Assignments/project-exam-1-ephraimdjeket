@@ -1,4 +1,59 @@
+# Blockchainbites
+
 ![image](https://github.com/Noroff-FEU-Assignments/project-exam-1-Dertzey/assets/45997915/4b1b9044-fbd8-4804-8ac3-6209aad19c2d)
+
+An interactive science museum called Community Science Museum.
+
+## Description
+
+Community Science Museum is an informative and exciting museum about science. The target audience is primary and middle school children (ages 7-15) and families with young children. 
+
+This project was created based on the first-semester curriculum, where we had to implement everything we knew about HTML, CSS and Design.
+
+- Semantic HTML
+- DRY Principle
+- WCAG principle
+
+## Built With
+
+- HTML
+- CSS
+- Javascript
+- Wordpress API
+
+## Getting Started
+
+### Installing
+
+1. Clone the repo:
+
+```bash
+gh repo clone Noroff-FEU-Assignments/cross-course-project-ephraimdjeket
+```
+
+2. Install the dependencies:
+
+```
+npm install
+```
+
+### Running
+
+```bash
+npm run start
+```
+
+## Contact
+
+[My Twitter page](https://twitter.com/Dertzey_)
+
+[My LinkedIn page](www.linkedin.com/in/ephraim-djeket)
+
+My Discord - dertzey.eth
+
+## Acknowledgments
+
+Noroff FED teachers and classmates for helping me with clarifying things and assist me whenever I got stuck.
 
 Desktop prototype: https://www.figma.com/proto/35vzRlGLrzHEpjssAAR284/Project-exam-1---Blockchainbites?page-id=0%3A1&type=design&node-id=1-4&viewport=320%2C506%2C0.12&t=xwDsjYd1khDkiwEf-1&scaling=min-zoom&starting-point-node-id=1%3A4&mode=design
 
