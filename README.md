@@ -44,11 +44,7 @@ npm run start
 
 ## Contact
 
-[My Twitter page](https://twitter.com/Dertzey_)
-
 [My LinkedIn page](www.linkedin.com/in/ephraim-djeket)
-
-My Discord - dertzey.eth
 
 ## Acknowledgments
 
