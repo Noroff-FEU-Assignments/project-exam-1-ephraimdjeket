@@ -1,6 +1,5 @@
 # Blockchainbites
 
-![image](https://github.com/Noroff-FEU-Assignments/project-exam-1-Dertzey/assets/45997915/4b1b9044-fbd8-4804-8ac3-6209aad19c2d)
 
 A blog site about cryptocurrency built with HTML, CSS, Javascript and Headless Wordpress REST API.
 
